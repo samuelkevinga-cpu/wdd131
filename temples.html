@@ -8,14 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js"></script>
+    <script src="scripts/temples.js" defer></script>
     <meta name="description" content="Explore the temples, their story and their majestic beauty">
     <meta name="author" content="Kevin Samuel Pacheco García">
     <title>Temples</title>
 </head>
 <body>
     <header>
-        <h1>Temple Album</h1>
+        <p class="site-title">Temple Album</p>
+        <button id="hamburger-btn">☰</button>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -28,42 +29,44 @@
     </header>
     <main>
         <h1>Temples</h1>
-        <figure>
-            <img src="images/temples/abidjan_ivory_coast_temple.jpeg" alt="Abidjan, Ivory Coast">
-            <figcaption>Abidjan, Ivory Coast</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temples/arequipa_peru_temple.jpeg" alt="Arequipa, Peru">
-            <figcaption>Arequipa, Peru</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temples/brigham_city_utah_temple.jpeg" alt="Brigham City, Utah">
-            <figcaption>Brigham City, Utah</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temples/casper_wyoming_temple.png" alt="Casper, Wyoming">
-            <figcaption>Casper, Wyoming</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temples/colonia_juarez_chihuahua_mexico_temple.jpeg" alt="Colonia Juarez, Mexico">
-            <figcaption>Colonia Juarez, Mexico</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temples/hong_kong_china_temple.jpeg" alt="Hong Kong, China">
-            <figcaption>Hong Kong, China</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temples/logan_utah_temple.jpeg" alt="Logan, Utah">
-            <figcaption>Logan, Utah</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temples/manila_philippines_temple.jpeg" alt="Manila, Philippines">
-            <figcaption>Manila, Philippines</figcaption>
-        </figure>
-        <figure>
-            <img src="images/temples/oaxaca_mexico_temple.jpeg" alt="Oaxaca, Mexico">
-            <figcaption>Oaxaca, Mexico</figcaption>
-        </figure>
+        <div class="cards-grid">
+            <figure class="card">
+                <img src="images/temples/abidjan_ivory_coast_temple.jpeg" alt="Abidjan, Ivory Coast">
+                <figcaption>Abidjan, Ivory Coast</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/temples/arequipa_peru_temple.jpeg" alt="Arequipa, Peru">
+                <figcaption>Arequipa, Peru</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/temples/brigham_city_utah_temple.jpeg" alt="Brigham City, Utah">
+                <figcaption>Brigham City, Utah</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/temples/casper_wyoming_temple.png" alt="Casper, Wyoming">
+                <figcaption>Casper, Wyoming</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/temples/colonia_juarez_chihuahua_mexico_temple.jpeg" alt="Colonia Juarez, Mexico">
+                <figcaption>Colonia Juarez, Mexico</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/temples/hong_kong_china_temple.jpeg" alt="Hong Kong, China">
+                <figcaption>Hong Kong, China</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/temples/logan_utah_temple.jpeg" alt="Logan, Utah">
+                <figcaption>Logan, Utah</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/temples/manila_philippines_temple.jpeg" alt="Manila, Philippines">
+                <figcaption>Manila, Philippines</figcaption>
+            </figure>
+            <figure class="card">
+                <img src="images/temples/oaxaca_mexico_temple.jpeg" alt="Oaxaca, Mexico">
+                <figcaption>Oaxaca, Mexico</figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
         <p>© <span id="currentyear"></span> Kevin Samuel Pacheco García | Oaxaca, México</p>
