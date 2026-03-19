@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>United Kingdom</h1>
+    </header>
+    <main>
+        <div id="hero">
+            <!-- Hero image    -->
+             <picture>
+                <source media="(min-width: 768px)" srcset="images/uk-large.webp">
+                <img src="images/uk-small.webp" alt="United Kingdom">
+             </picture>
+        <!-- data section  -->
+         <section class="data-section">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area:</th>
+                    <td>1,964,375 sq km</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>128,455,567</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Mexico City</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>Spanish</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Mexican Peso</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC-6</td></tr>
+            </table>
+         </section>
+         <!-- Weather box (overlays image on desktop) -->
+          <section class="weather-section">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="weather icon" class="weather-icon-mobile">
+            <!--weather table-->
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td>18 °C</td>
+                </tr>
+                <tr>
+                    <th>Humidity:</th>
+                    <td>65%</td>
+                </tr>
+                <tr>
+                    <th>Wind Speed:</th>
+                    <td>10 km/h</td>
+                </tr>
+                <tr>
+                    <th>Pressure:</th>
+                    <td>1013 hPa</td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th>
+                    <td id="windChill"></td>
+                 </tr>
+            </table>
+          </section>
+        </div>
+       
+    </main>
+    <!-- This footer will have the copyright symbol, my name, location and the last modified date of the website -->
+    <footer>
+        <p>© <span id="currentYear"></span> Kevin Samuel Pacheco García | Mexico, All rights reserved</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

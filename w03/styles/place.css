@@ -1,0 +1,67 @@
+:root{
+    --primary-color: #006847;
+    --secondary-color: #CE1126;
+    --text-light: #ffffff;
+    --text-dark: #121212;
+    --box-bg: rgba(255, 255, 255, 0.92);
+    --font-main: 'Georgia', serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-main);
+    color: var(--text-dark);
+}
+header {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--text-light);
+  font-size: 3rem;
+}
+#hero picture img{
+    width: 100%;
+    display: block;
+    max-height: 500px;
+    object-fit: cover;
+}
+/* Data section */
+.weather-icon-mobile {
+  display: block;
+  width: 50px;
+  margin: 0 auto 1rem;
+}
+.data-section, .weather-section {
+  background-color: var(--box-bg);
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 4px;
+}
+.data-section h2,
+.weather-section h2 {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+th{
+    text-align: right;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+td{
+    text-align: left;
+    padding-left: 1rem;
+}
+footer{
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+}

@@ -1,0 +1,41 @@
+/* This code is for a desktop version of the place.html page. It is linked to the place.html 
+file and will only be applied when the screen width is 768px or larger. */
+@media (min-width: 768px){
+    #hero{
+        display: grid;
+    }
+    #hero picture{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #hero picture img{
+        max-height: 600px;
+    }
+    .data-section{
+        grid-column: 1;
+        grid-row: 1;
+        align-self: start;
+        justify-self:  start;
+        margin: 2rem;
+        width: 300px;
+        z-index: 1;
+    }
+    .weather-section{
+        grid-column: 1;
+        grid-row: 1;
+        align-self: end;
+        justify-self: end;
+        margin: 2rem;
+        width: 300px;
+        z-index: 1;
+    }
+    /* Hide SVG icon on desktop */
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    /* Show emoji using pseudo-element */
+    .weather-section h2::after {
+        content: " ⛅";
+    }
+}
