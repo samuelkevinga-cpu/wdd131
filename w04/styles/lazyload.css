@@ -1,0 +1,6 @@
+/*Display the <img> elements in a single centered column regardless of screen size. (Hint: Use CSS display: block)*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

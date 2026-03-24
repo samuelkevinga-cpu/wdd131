@@ -1,0 +1,8 @@
+:root{
+    --zebra: hsl(0, 0%, 93%, 1);
+
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
