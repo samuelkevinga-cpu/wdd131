@@ -1,0 +1,12 @@
+/* Larger screen styles — applied when viewport is 640px or wider */
+@media (min-width: 640px) {
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    #hamburger-btn {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+    }
+}
